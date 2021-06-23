@@ -1,0 +1,19 @@
+{
+  "name": "add-page",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000a\u0000d\u0000d\u0000-\u0000p\u0000a\u0000g\u0000e\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "addpage": "powershell -Command \"(gc setup.bat) -replace 'MyPage', 'MyPages' -replace 'MyPath', 'test/max' | Out-File -encoding ASCII index.bat\" & index.bat & del index.bat"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/softintech/add-page.git"
+  },
+  "author": "dech.tum",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/softintech/add-page/issues"
+  },
+  "homepage": "https://github.com/softintech/add-page#readme"
+}
